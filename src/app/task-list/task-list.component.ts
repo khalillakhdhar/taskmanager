@@ -22,6 +22,7 @@ export class TaskListComponent {
     if(this.newTask!=="")
     {
       this.taskService.addTasks(this.newTask);
+      this.newTask="";
 
     }
     else{

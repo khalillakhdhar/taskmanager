@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class TaskService {
 private tasks: string[] = [];
   constructor() { }
+
   getTasks(): string[] {
     return this.tasks;
   }

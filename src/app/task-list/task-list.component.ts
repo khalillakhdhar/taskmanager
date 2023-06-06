@@ -16,6 +16,7 @@ export class TaskListComponent {
   ngOnInit(): void
   {
     this.tasks=this.taskService.getTasks();
+
   }
   addTask(): void{
     if(this.newTask!=="")

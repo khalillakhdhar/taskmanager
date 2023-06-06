@@ -1,1 +1,14 @@
-<p>task-list works!</p>
+<h2> ajouter une tache</h2>
+<form>
+  Nouvelle tache <input type="text" placeholder="Nouvel tache" required name="nt" [(ngModel)]="newTask">
+  <button type="submit">Ajouter</button>
+</form>
+
+
+<h2>Liste des taches</h2>
+<ul>
+  <li *ngFor="let ts of tasks">
+    {{ ts}}
+  </li>
+</ul>
+
